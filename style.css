@@ -1,0 +1,9 @@
+.hero-bg img{
+      height:90vh;
+}
+.hero-bg .carousel-caption {
+      bottom: 12.25rem;
+  }
+  .col-lg-4 .card {
+      --bs-card-border-radius: 0 0 0.375rem  0.375rem;
+}
