@@ -6,47 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.2/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
 <!-- header section start -->
-      <section class="header-area" id="header-area">
-            <nav class="navbar navbar-expand-lg bg-light">
-                  <div class="container-fluid px-5">
-                        <a class="navbar-brand text-primary" href="#">LFWF Academy</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <section class="header-area">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+                  <div class="container-fluid  mx-5">
+                        <a class="navbar-brand text-primary" href="javascript:void(0)">LFWF Academy</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                               <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                          Service
-                                          </a>
-                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">About</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><hr class="dropdown-divider"></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                          </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link">Blog</a>
-                                    </li>
-                              </ul>
-                              <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                              </form>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                              <li class="nav-item">
+                                    <a class="nav-link active text-dark" href="javascript:void(0)">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link text-muted" href="javascript:void(0)">About</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">About</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link text-muted" href="javascript:void(0)">Blog</a>
+                              </li>
+                        </ul>
+                        <form class="d-flex">
+                              <input class="form-control me-2" type="text" placeholder="Search">
+                              <button class="btn btn-outline-success" type="button">Search</button>
+                        </form>
                         </div>
                   </div>
             </nav>
@@ -117,9 +115,271 @@
       </div>
 </section>
 <hr>
+<!-- table and form area start -->
+<section class="table-form-area bg-light py-5">
+      <div class="container">
+            <div class="row">
+                  <div class="col-lg-7">
+                        <h3 class="text-success py-3">Bootstrap 5 table</h3>
+                        <table class="table table-hover table-bordered text-center">
+                              <thead>
+                                <tr class="table-dark">
+                                  <th>No.</th>
+                                  <th>Name</th>
+                                  <th>Class</th>
+                                  <th>Roll</th>
+                                  <th>Section</th>
+                                  <th>Address</th>
+                                  <th>Contact</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-primary">
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr> 
+                                <tr class="table-secondary">
+                                       <td>1</td>
+                                  <td>Faisal</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                                <tr class="table-success">
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                                <tr class="table-danger">
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                                <tr class="table-warning">
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                <tr class="table-light">
+                                       <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                                <tr class="table-primary">
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                                  <tr class="table-success">
+                                  <td>1</td>
+                                  <td>Abdullah</td>
+                                  <td>Ten</td>
+                                  <td>15</td>
+                                  <td>A</td>
+                                  <td>Dhaka</td>
+                                  <td>+88012345678</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Launch demo modal
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                    <div class="modal-content">
+                                          <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                                this is body
+                                          </div>
+                                          <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-5 ps-5">
+                        <h3 class="text-success">Bootstrap5 Form</h3>
+                        <form action="" class="row g-3">
+                              <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" placeholder="First name" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Last Name</label>
+                                    <input type="text" placeholder="Last name" class="form-control" id="inputPassword4">
+                              </div>
+                              <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="name@gmail.com">
+                              </div>
+                              <div class="col-12">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <div class="col-12">
+                                    <label for="formFile" class="form-label">Choose File</label>
+                                    <input class="form-control" type="file" id="formFile">
+                              </div>
+                              <div class="col-12">
+                                    <select class="form-select" aria-label="Default select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                    </select>
+                              </div>
+                              
+                              <div class="col-12">
+                                    <h3>Choose your Course</h3>
+                                    <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                                </label>
+                                    </div>
+                                    <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" 	checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Checked checkbox
+                                                </label>
+                                    </div>
+                              </div>
+                              <div class="col-12">
+                                    <button type="submit" class="btn btn-success px-5">Submit</button>
+                              </div>
+                        </form>
+                  </div>
+            </div>
+      </div>
+</section>
+<!-- table and form area End -->
 <!-- blockquote area End -->
 <!-- card area and page-area Start-->
-<section class="card-area">
+<!-- card and skill bar Start-->
+<hr>
+<section class="card-skill-bar-area">
+     
+      <div class="container">
+            <h3 class="text-center py-5">Bootstrap Card And Progress Bar</h3>
+            <div class="row">
+                  <div class="col-lg-12 d-flex">
+                        <div class="col-lg-4">
+                              <div class="card">
+                                    <h4 class="card-header text-center">This is Header</h4> 
+                                      <h4 class="card-title p-2">Card title</h4>
+                                  <ul class="list-group list-group-flush card m-3">
+                                      <li class="list-group-item">An item</li>
+                                      <li class="list-group-item">A second item </br>
+                                      A second item
+                                      </li>
+                                      <li class="list-group-item">A third item</li>
+                                      <li class="list-group-item">A third item</li>
+                                    </ul>
+                                           <p class="card-text p-3">Some example text. Some example text
+                                    Some example text. Some example text Some example text. Some example text
+                                    Some example text. 
+                                    </p>
+                                   <div class="card-body">
+                                      <a href="#" class="card-link">Card link</a>
+                                      <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                <div class="card-body">
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                                </div>
+                               <h4 class="card-footer text-center">This is Footer</h4>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 p-4 mt-5">
+                              <div class="skill-bar">
+                                          <h4>HTML</h4>
+                                          <div class="progress">
+                                                <div class="progress-bar" style="width:90%">90%</div>
+                                          </div>
+                                          <h4>CSS</h4>
+                                          <div class="progress">
+                                                <div class="progress-bar" style="width:95%">95%</div>
+                                          </div>
+                                          <h4>Js</h4>
+                                          <div class="progress">
+                                                <div class="progress-bar" style="width:80%">80%</div>
+                                          </div>
+                                          <h4>Wordpress</h4>
+                                          <div class="progress mb-5">
+                                                <div class="progress-bar" style="width:85%">85%</div>
+                                          </div>
+                                          <h3>text-truncate i use bootstrap class for 3 dot anben  </h3>
+                                          <div class="col-10 text-truncate my-5">
+                                                This text is quite long, and will be truncated once displayed.
+                                          </div>
+                                          <div class="alert alert-danger" role="alert">
+                                                A simple danger alert—check it out!
+                                          </div>
+                              </div>
+                        </div>
+                      
+                  <div class="col-lg-4">
+                        <div class="card-right">
+                              <div class="card"> 
+                                    <div class="card-header">Header</div>
+                                    <div class="img-card p-2">
+                                          <img class="card-img-top" src="img/grapefruit-slice-332-332.jpg" alt="Card image">
+                                    </div>
+                                    <div class="mb-3">
+                                          <p class="card-text px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsam voluptas molestiae ab accusamus optio cum ut voluptates temporibus numquam.</p>
+                                    </div> 
+                                    <div class="card-footer">Footer</div>
+                                  </div>
+                        </div>
+                  </div>
+            </div>   
+      </div>
+</div>
+</div>
+</section>
+.<!-- card and skill bar End-->
+<section class="card-area pt-5 pb-2">
       <div class="container">
             <div class="row justify-content-around">
                   <div class="col-lg-4">
@@ -127,8 +387,8 @@
                               <img src="img/blog-2.jpg" class="" alt="...">
                               <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">Some quick example Lorem ipsum dolor sit amet. text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
                               </div>
                             </div>
                   </div>
@@ -137,8 +397,8 @@
                               <img src="img/blog-3.jpg" alt="...">
                               <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">Some quick example Lorem ipsum dolor sit amet. text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
                               </div>
                             </div>
                   </div>
@@ -147,8 +407,8 @@
                               <img src="img/blog-1.jpg" alt="...">
                               <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">Some quick example Lorem ipsum dolor sit amet. text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
                               </div>
                             </div>
                   </div>
@@ -156,7 +416,7 @@
       </div>
           <!-- card area End-->
       <!-- pagination area Start -->
-      <section class="page-area">
+      <section class="page-area pt-5">
             <div class="container-fluid">
                   <div class="row justify-content-center">
                         <div class="col-lg-3">
@@ -188,6 +448,6 @@
 </footer>
 <!-- footer area End -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.2/js/bootstrap.bundle.js"></script>
   </body>
 </html>
